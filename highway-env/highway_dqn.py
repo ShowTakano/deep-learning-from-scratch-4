@@ -6,6 +6,7 @@ from common.utils import plot_history
 
 import gymnasium
 from gymnasium.wrappers import RecordVideo
+import highway_env
 from stable_baselines3 import DQN
 
 import torch
