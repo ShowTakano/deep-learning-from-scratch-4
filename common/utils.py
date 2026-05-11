@@ -22,10 +22,12 @@ def greedy_probs(Q, state, epsilon=0, action_size=4):
     return action_probs
 
 
-def plot_total_reward(reward_history):
+def plot_history(history, ylabel="Total Reward", fig_name="total_reward.png"):
     plt.xlabel('Episode')
-    plt.ylabel('Total Reward')
-    plt.plot(range(len(reward_history)), reward_history)
-    plt.show()
+    plt.ylabel(ylabel)
+    plt.plot(range(len(history)), history)
+    plt.savefig(fig_name)
+    # plt.show()
+    plt.close()
 
 
